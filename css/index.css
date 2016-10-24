@@ -1,0 +1,10 @@
+.dib{ display: inline-block; vertical-align: middle;}
+.hide,.shide{ display:none;}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}

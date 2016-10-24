@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+		<meta http-equiv="Content-Type">
+		<meta content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		<title>会员中心</title>		
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=750px, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<script src="./js/zepto.min.js"></script>
+		<script>
+		function adaptscreen(widthnum){
+			var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+			ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+			deviceWidth = window.screen.width, // 设备的宽度
+			devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+			targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+			if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+				targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+			}else{
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+			}
+		}
+		adaptscreen(750);
+		</script>      
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/usercenter.css?v=0" />
+	</head>
+	<body class="bg-grey">
+		<div class="top-wrap">
+			<div class="top-block-bg"></div>
+			<div class="top-count-wrap">
+				<div class="tcw">
+					<p class="t1">60</p>
+					<p class="t2">粉丝</p>
+				</div>
+				<div class="tcw">
+					<p class="t1">30</p>
+					<p class="t2">积分</p>
+				</div>
+				<div class="tcw">
+					<p class="t1">280</p>
+					<p class="t2">可兑换</p>
+				</div>
+			</div>
+			<img class="user-head" src="./imgs/eg/head_eg.jpg" />
+			<div class="user-name">小妖会馆</div>
+			<div class="user-id">小妖号：892021</div>
+		</div>
+		<div class="main-wrap">
+			<a class="mw-line more-icon" href="javascript:;">
+				<div class="dib title duihuan"></div>
+				<div class="dib name">兑换</div>
+				<span class="dib num">12</span>
+			</a>
+
+			<a class="mw-line more-icon" href="javascript:;">
+				<div class="dib title tixian"></div>
+				<div class="dib name">提现</div>
+				<span class="dib num">12</span>
+			</a>
+
+			<a class="mw-line more-icon" href="javascript:;">
+				<div class="dib title fensi"></div>
+				<div class="dib name">粉丝</div>
+				<span class="dib num">12</span>
+			</a>
+
+			<a class="mw-line more-icon" href="javascript:;">
+				<div class="dib title erweima"></div>
+				<div class="dib name">二维码</div>
+				<span class="dib num">12</span>
+			</a>
+
+		</div>
+	</body>
+</html>
