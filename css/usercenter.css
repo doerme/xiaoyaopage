@@ -205,3 +205,166 @@
     border-left-color: #bfbfbf;
     right: 10px;
 }
+
+.fanpai-main{
+	position: relative;
+	width: 750px;
+	height: 1002px;
+	background: url('../imgs/pai-main-bg.png') no-repeat;
+}
+
+.fanpai-main .fanpai-cover{
+	position: absolute;
+	width: 696px;
+	height: 746px;
+	border-radius: 14px;
+	left: 25px;
+	top: 16px;
+}
+
+.fanpai-main .radio-play{
+	position: absolute;
+	width: 696px;
+	height: 746px;
+	left: 25px;
+	top: 16px;
+	background: url('../imgs/play-bt.png') no-repeat center center;
+}
+
+.fanpai-main .name{
+	position: absolute;
+	top: 790px;
+	left: 62px;
+	font-size: 36px;
+	color: #333;
+	font-weight: bold;
+}
+
+.fanpai-main .age{
+	position: absolute;
+	top: 848px;
+	font-size: 24px;
+	color: #FFF;
+	padding: 5px 15px;
+	border-radius: 15px;
+	background: #f589ff;
+	left: 55px;
+}
+
+.fanpai-main .constellation{
+	position: absolute;
+	top: 848px;
+	font-size: 24px;
+	color: #FFF;
+	padding: 5px 15px;
+	border-radius: 15px;
+	background: #ff8080;
+	left: 128px;
+}
+
+.fanpai-main .hobby{
+	position: absolute;
+	top: 900px;
+	font-size: 24px;
+	color: #b6b6b6;
+	left: 62px;
+}
+
+.ctrl-main{
+	position: relative;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.ctrl-main .cm-bt{
+	width: 130px;
+	height: 130px;
+	border: 16px solid #e8e8e8;
+	border-radius: 50%;
+	position: relative;
+}
+
+.ctrl-main .cm-bt.left{
+	float: left;
+	margin-left: 190px; 
+}
+
+.ctrl-main .cm-bt.left:after{
+	content: '';
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background: url('../imgs/icons/cancel.png') no-repeat;
+	top: 40px;
+	left: 50%;
+	margin-left: -24px; 
+}
+
+.ctrl-main .cm-bt.right{
+	float: right;
+	margin-right: 190px;
+}
+
+.ctrl-main .cm-bt.right:after{
+	content: '';
+	position: absolute;
+	width: 54px;
+	height: 48px;
+	background: url('../imgs/icons/like-red.png') no-repeat;
+	top: 40px;
+	left: 50%;
+	margin-left: -27px; 
+}
+
+.msg-window{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+
+.msg-window .mw-mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: rgba(0,0,0,0.5);
+}
+
+.msg-window .mw-main{
+	position: absolute;
+	width: 750px;
+	height: 546px;
+	background: url('../imgs/window-bg.png') no-repeat;
+	left: 0px;
+	top: 200px;
+}
+
+.mwm-tips{
+	position: absolute;
+	left: 50%;
+	margin-left: -220px;
+	top: 280px;
+	width: 440px;
+	height: 110px;
+	font-size: 36px; 
+	color: #fcee4a;
+	text-align: center;
+}
+
+.mwm-bt{
+	position: absolute;
+	width: 405px;
+	left: 50%;
+	margin-left: -202px; 
+	top: 400px;
+	height: 100px;
+	line-height: 90px;
+	text-align: center;
+	background: url('../imgs/bt-bg.png') no-repeat;
+	font-size: 36px;
+	color: #ff2c4a;
+}
