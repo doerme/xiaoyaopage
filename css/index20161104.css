@@ -109,3 +109,77 @@
 	font-size: 30px;
 	color: #333;
 }
+
+.hongbao_bg{
+	background: #310070;
+}
+
+.hongbao_wrap{
+	position: relative;
+	background: url('../imgs/20161104/hongbao_bg.jpg') no-repeat center center;
+	width: 750px;
+	height: 1334px;
+}
+
+.hongbao_wrap .hw-remind{
+	position: absolute;
+	width: 520px;
+	left: 50%;
+	margin-left: -260px;
+	font-size: 30px;
+	color: #FFF;
+	top: 383px;
+	text-align: center;
+}
+
+.hongbao_wrap .hw-rest{
+	position: absolute;
+	width: 320px;
+	left: 50%;
+	margin-left: -160px;
+	top: 502px;
+	color: #FFF;
+	font-size: 28px;
+	text-align: center;
+}
+
+.hongbao_wrap .hw-num-wrap{
+	position: absolute;
+	width: 614px;
+	left: 50%;
+	margin-left: -265px;
+	top: 545px;
+}
+
+.hongbao_wrap .hw-num-wrap .hw-num{
+	display: block;
+	width: 116px;
+	height: 116px;
+	text-align: center;
+	line-height: 116px;
+	background: #6500e8;
+	border-radius: 10px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	font-size: 30px;
+	color: #FFF;
+}
+
+.hongbao_wrap .hw-red-pocket{
+	position: absolute;
+	top: 886px;
+	left: 50%;
+	width: 618px;
+	margin-left: -309px;
+	text-align: center; 
+}
+
+.hongbao_wrap .hw-rp{
+	display: inline-block;
+	width: 131px;
+	height: 158px;
+	background: url('../imgs/20161104/hongbao_main.png') no-repeat;
+	background-size: 131px 158px;
+	margin: 5px;
+}
