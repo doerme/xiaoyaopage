@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no"> 
+	<meta http-equiv="Content-Type">
+	<meta content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=750px, user-scalable=no">
+	<title>我的粉丝</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css?v=2" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css?v=2" />
+	<style type="text/css">
+		
+		.main-wrap.fanlist{
+
+		}
+
+		.main-wrap.fanlist .fan-ul{
+			position: relative;
+		}
+
+		.main-wrap.fanlist .fan-ul li{
+			position: relative;
+			height: 160px;
+			line-height: 160px;
+			overflow: hidden;
+		}
+
+		.main-wrap.fanlist .list-cover{
+		   padding-left: 20px;
+		   padding-right: 20px;
+		   vertical-align: top;
+		}
+
+		.main-wrap.fanlist .cover{
+			width: 115px;
+			height: 115px;
+			border-radius: 50%;
+		}
+
+		.main-wrap.fanlist .list-nickname{
+			width: 580px;
+			height: 160px;
+			line-height: 160px;
+			border-bottom: 2px solid #e3e3e3;
+			vertical-align: top;
+			font-size: 30px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			box-sizing: border-box;
+		}
+
+		.main-wrap.fanlist .loader {
+			position: fixed;
+		    box-sizing: border-box;
+		    display: flex;
+		    flex: 0 1 auto;
+		    flex-direction: column;
+		    flex-grow: 1;
+		    flex-shrink: 0;
+		    flex-basis: 25%;
+		    max-width: 25%;
+		    height: 80px;
+		    align-items: center;
+		    justify-content: center;
+		    left: 50%;
+		    bottom: 0px;
+		    margin-left: -30px;
+		}
+		
+		.main-wrap.fanlist .loader {
+			position: fixed;
+		    box-sizing: border-box;
+		    display: flex;
+		    flex: 0 1 auto;
+		    flex-direction: column;
+		    flex-grow: 1;
+		    flex-shrink: 0;
+		    flex-basis: 25%;
+		    max-width: 25%;
+		    height: 80px;
+		    align-items: center;
+		    justify-content: center;
+		    left: 50%;
+		    bottom: 0px;
+		    margin-left: -30px;
+		}
+
+
+		@-webkit-keyframes ball-pulse-sync {
+		  33% {
+		    -webkit-transform: translateY(10px);
+		            transform: translateY(10px); }
+
+		  66% {
+		    -webkit-transform: translateY(-10px);
+		            transform: translateY(-10px); }
+
+		  100% {
+		    -webkit-transform: translateY(0);
+		            transform: translateY(0); } }
+
+		@keyframes ball-pulse-sync {
+		  33% {
+		    -webkit-transform: translateY(10px);
+		            transform: translateY(10px); }
+
+		  66% {
+		    -webkit-transform: translateY(-10px);
+		            transform: translateY(-10px); }
+
+		  100% {
+		    -webkit-transform: translateY(0);
+		            transform: translateY(0); } }
+
+		.ball-pulse-sync > div:nth-child(0) {
+		  -webkit-animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+		          animation: ball-pulse-sync 0.6s 0s infinite ease-in-out; }
+		.ball-pulse-sync > div:nth-child(1) {
+		  -webkit-animation: ball-pulse-sync 0.6s 0.07s infinite ease-in-out;
+		          animation: ball-pulse-sync 0.6s 0.07s infinite ease-in-out; }
+		.ball-pulse-sync > div:nth-child(2) {
+		  -webkit-animation: ball-pulse-sync 0.6s 0.14s infinite ease-in-out;
+		          animation: ball-pulse-sync 0.6s 0.14s infinite ease-in-out; }
+		.ball-pulse-sync > div:nth-child(3) {
+		  -webkit-animation: ball-pulse-sync 0.6s 0.21s infinite ease-in-out;
+		          animation: ball-pulse-sync 0.6s 0.21s infinite ease-in-out; }
+		.ball-pulse-sync > div {
+		  background-color: #333;
+		  width: 15px;
+		  height: 15px;
+		  border-radius: 50%;
+		  margin: 2px;
+		  -webkit-animation-fill-mode: both;
+		          animation-fill-mode: both;
+		  display: inline-block; 
+		}
+	</style>
+</head>
+<body>
+<div class="main-wrap fanlist">
+	<ul class="fan-ul">
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+		<li>
+			<div class="list-cover l">
+				<img class="cover dib" src="./img/list_cover.png" />
+			</div>
+			<div class="list-nickname r">队长让少妇先走</div>
+		</li>
+	</ul>
+
+	<div class="loader hide js-loader">
+	    <div class="loader-inner ball-pulse-sync">
+	      	<div></div>
+	      	<div></div>
+	      	<div></div>
+	    </div>
+	</div>
+
+</div>
+
+<div class="ck-temp hide">
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+	<li>
+		<div class="list-cover l">
+			<img class="cover dib" src="./img/list_cover.png" />
+		</div>
+		<div class="list-nickname r">队长让少妇先走</div>
+	</li>
+</div>
+
+<script type="text/javascript" src = "./js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	adaptscreen(750);
+
+	/*滚动到底部的代码*/
+	function onBottomEven(){
+		console.log('onBottomEven');
+		$('.js-loader').removeClass('hide');
+		setTimeout(function(){
+			$('.fan-ul').append($('.ck-temp').html());
+			$('.js-loader').addClass('hide');
+		},1000)
+
+	}
+
+
+
+	$(window).scroll(function(){
+	　　var scrollTop = $(this).scrollTop();
+	　　var scrollHeight = $(document).height();
+	　　var windowHeight = $(this).height();
+		console.log(scrollHeight,scrollTop,windowHeight);
+	　　if(scrollHeight - scrollTop <= windowHeight + 10){
+	　　　　onBottomEven();
+	　　}
+	});
+})
+function adaptscreen(widthnum){
+	var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+	ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+	deviceWidth = window.screen.width, // 设备的宽度
+	devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+	targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+	if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+	targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+	$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+	}else{
+		$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+	}
+}
+</script>
+</body>
+</html>
