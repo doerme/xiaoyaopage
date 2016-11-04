@@ -55,6 +55,10 @@
 	overflow: hidden;
 }
 
+.center_wrap .center_main .li-wrap{
+	display: block;
+}
+
 .center_wrap .center_main ul{
 	width: 590px;
 	margin-left: auto;

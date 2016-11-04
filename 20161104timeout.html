@@ -78,11 +78,10 @@
 					//console.log(restNow);
 					if(restNow < 0){
 						restNow = 0;
-						$('.rest-time').addClass('hide');
-						$('.js-search-bottle').attr('canthrow','1');
+						/*倒计时结束逻辑*/
+						window.location.href = window.location.href;
 					}else{
-						$(this).html(formatSeconds(restNow))
-						$('.js-search-bottle').attr('canthrow','0');
+						$(this).html(formatSeconds(restNow))					
 					}
 				})
 			},1000)
