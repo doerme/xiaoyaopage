@@ -55,5 +55,22 @@
 				<a class="hw-rp" href="javascript:;"></a>
 			</div>
 		</div>
+		<!-- 红包弹窗 -->
+		<div class="window-wrap">
+			<div class="window-mask"></div>
+			<img class="window-close" src="./imgs/20161104/window_close.png" />
+			<div class="window-main">
+				<div class="wm-show"><span class="mark">￥</span><span class="num">1.21</span></div>
+			</div>
+		</div>
+		<!-- 红包弹窗end -->
+
+		<script>
+			$(function(){
+				$('.window-mask').on('tap',function(){
+					$('.window-wrap').addClass('hide');
+				})
+			})
+		</script>
 	</body>
 </html>

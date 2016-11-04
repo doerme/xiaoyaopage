@@ -128,7 +128,7 @@
 	margin-left: -260px;
 	font-size: 30px;
 	color: #FFF;
-	top: 383px;
+	top: 430px;
 	text-align: center;
 }
 
@@ -137,9 +137,9 @@
 	width: 320px;
 	left: 50%;
 	margin-left: -160px;
-	top: 502px;
-	color: #FFF;
-	font-size: 28px;
+	bottom: 83px;
+	color: #9f55ff;
+	font-size: 24px;
 	text-align: center;
 }
 
@@ -148,7 +148,7 @@
 	width: 614px;
 	left: 50%;
 	margin-left: -265px;
-	top: 545px;
+	top: 530px;
 }
 
 .hongbao_wrap .hw-num-wrap .hw-num{
@@ -168,7 +168,7 @@
 
 .hongbao_wrap .hw-red-pocket{
 	position: absolute;
-	top: 886px;
+	top: 866px;
 	left: 50%;
 	width: 618px;
 	margin-left: -309px;
@@ -238,4 +238,56 @@
 	border-radius: 40px;
 	top: 1226px;
 	opacity: 0.8;
+}
+
+.window-wrap{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.window-wrap .window-mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+
+.window-wrap .window-close{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 200px;
+	right: 100px;
+	pointer-events: none;
+}
+
+.window-wrap .window-main{
+	position: absolute;
+	width: 494px;
+	height: 694px;
+	background: url('../imgs/20161104/window_bg.png') no-repeat center center;
+	left: 50%;
+	margin-left: -247px;
+	top: 250px;
+}
+
+.window-wrap .window-main .wm-show{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 0px;
+	top: 500px;
+}
+
+.window-wrap .window-main .wm-show .mark{
+	font-size: 60px;
+	color: #fff75c;
+}
+
+.window-wrap .window-main .wm-show .num{
+	font-size: 100px;
+	color: #fff75c;
 }
