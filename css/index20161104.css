@@ -1,0 +1,111 @@
+.center_wrap{
+
+}
+
+.center_wrap .center_top{
+	position: relative;
+	background: #45009c;
+	height: 520px;
+	overflow: hidden;
+}
+
+.center_wrap .center_top .ct_head{
+	display: block;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	border: 5px solid #FFF ;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 110px;
+}
+
+.center_wrap .center_top .ct_name{
+	display: block;
+	width: 100%;
+	color: #FFF;
+	margin-top: 25px;
+	font-size: 36px;
+	text-align: center;
+}
+
+.center_wrap .center_top .ct_state{ 
+	display: block;
+	width: 100%;
+	margin-top: 80px;
+}
+
+.center_wrap .center_top .ct_state .unit{
+	width: 32%;
+	text-align: center;
+}
+
+.center_wrap .center_top .ct_state p{
+	font-size: 30px;
+	color: #FFF;
+}
+
+.center_wrap .center_main{
+
+}
+
+.center_wrap .center_main{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.center_wrap .center_main ul{
+	width: 590px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center_wrap .center_main ul li{
+	overflow: hidden;
+	width: 590px;
+	height: 90px;
+	line-height: 90px;
+	border: 2px solid #e7e7e7;
+	border-radius: 40px;
+	background: url('../imgs/20161104/list_bg.png') no-repeat 520px center;
+	margin-top: 50px;
+}
+
+.center_wrap .center_main ul li .mark{
+	width: 88px;
+	height: 90px;
+}
+
+.center_wrap .center_main ul li .mark.duihuan{
+	background: url('../imgs/20161104/list_duihuan.png') no-repeat center center;
+}
+
+.center_wrap .center_main ul li .mark.tixian{
+	background: url('../imgs/20161104/list_tixian.png') no-repeat center center;
+}
+
+.center_wrap .center_main ul li .mark.fensi{
+	background: url('../imgs/20161104/list_fans.png') no-repeat center center;
+}
+
+.center_wrap .center_main ul li .mark.qrcode{
+	background: url('../imgs/20161104/list_qrcode.png') no-repeat center center;
+}
+
+.center_wrap .center_main ul li .mark.flow{
+	background: url('../imgs/20161104/list_flow.png') no-repeat center center;
+}
+
+.center_wrap .center_main ul li .name{
+	font-size: 36px;
+	color: #333;
+	width: 360px;
+	height: 90px;
+	overflow: hidden;
+}
+
+.center_wrap .center_main ul li .num{
+	font-size: 30px;
+	color: #333;
+}

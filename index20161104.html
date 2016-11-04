@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+		<meta http-equiv="Content-Type">
+		<meta content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		<title>会员中心</title>		
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=750px, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<script src="./js/zepto.min.js"></script>
+		<script>
+		function adaptscreen(widthnum){
+			var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+			ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+			deviceWidth = window.screen.width, // 设备的宽度
+			devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+			targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+			if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+				targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+			}else{
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+			}
+		}
+		adaptscreen(750);
+		</script>      
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index20161104.css?v=0" />
+	</head>
+	<body>
+		<div class="center_wrap">
+			<div class="center_top">
+				<img class="ct_head" src="./imgs/eg/photo_eg.jpg" />
+				<div class="ct_name">小妖会馆</div>
+				<div class="ct_state">
+					<div class="dib unit">
+						<p>60</p>
+						<p>粉丝</p>
+					</div>
+					<div class="dib unit">
+						<p>30</p>
+						<p>积分</p>
+					</div>
+					<div class="dib unit">
+						<p>280</p>
+						<p>可兑换</p>
+					</div>
+				</div>
+			</div>
+			<div class="center_main">
+				<ul>
+					<li>
+						<div class="mark dib duihuan"></div>
+						<div class="name dib">兑换</div>
+						<div class="num dib">12</div>
+					</li>
+					<li>
+						<div class="mark dib tixian"></div>
+						<div class="name dib">提现</div>
+						<div class="num dib">60</div>
+					</li>
+					<li>
+						<div class="mark dib fensi"></div>
+						<div class="name dib">粉丝</div>
+					</li>
+					<li>
+						<div class="mark dib qrcode"></div>
+						<div class="name dib">二维码</div>
+					</li>
+					<li>
+						<div class="mark dib flow"></div>
+						<div class="name dib">物流</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
