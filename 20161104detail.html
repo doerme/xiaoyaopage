@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+		<meta http-equiv="Content-Type">
+		<meta content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		<title>会员中心</title>		
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=750px, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<script src="./js/zepto.min.js"></script>
+		<script>
+		function adaptscreen(widthnum){
+			var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+			ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+			deviceWidth = window.screen.width, // 设备的宽度
+			devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+			targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+			if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+				targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+			}else{
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+			}
+		}
+		adaptscreen(750);
+		</script>      
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index20161104.css?v=0" />
+	</head>
+	<body>
+		<div class="detail_wrap">
+			<div class="detail-top">
+				<img class="cover" src="./imgs/eg/goods_eg.jpg" />
+				<div class="name">高级鸭绒软枕 护颈加强版</div>
+				<div class="price">¥298</div>
+				<div class="rest">剩余库存：978</div>
+			</div>
+			<div class="detail-main">
+				<div class="dm-line">
+					<div class="dl-title dib">购买数量</div>
+					<div class="dl-form dib"><span class="js-m">-</span><span class="num js-num">1</span><span class="js-a">+</span></div>
+				</div>
+				<div class="dm-line">
+					<div class="dl-title dib">姓名</div>
+					<div class="dl-form dib"><input class="dfi dib" type="text" name="" placeholder="填写姓名"></div>
+				</div>	
+				<div class="dm-line">
+					<div class="dl-title dib">手机</div>
+					<div class="dl-form dib"><input class="dfi dib" type="text" name="" placeholder="填写手机"></div>
+				</div>	
+				<div class="dm-line">
+					<div class="dl-title dib">详细地址</div>
+					<div class="dl-form dib"><input class="dfi dib" type="text" name="" placeholder="填写地址"></div>
+				</div>	
+				<div class="dm-line">
+					<div class="dl-title dib">留言</div>
+					<div class="dl-form dib"><textarea class="dft dib" rows="2" placeholder="如果购买国际直邮商品，请填写收货人身份证号码"></textarea></div>
+				</div>	
+			</div>
+			<div class="detail-sum">总计：<span>￥298</span></div>
+			<a class="submit-bt" href="javascript:;">确定</a>
+		</div>
+		<script type="text/javascript">
+			$('.js-m').on('tap',function(){
+				$('.js-num').html($('.js-num').html() - 1 < 0 ? 0 : $('.js-num').html() - 1)
+			})
+			$('.js-a').on('tap',function(){
+				$('.js-num').html($('.js-num').html() *1 + 1)
+			})
+		</script>
+	</body>
+</html>

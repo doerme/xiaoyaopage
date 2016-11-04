@@ -296,3 +296,149 @@
 	font-size: 100px;
 	color: #fff75c;
 }
+
+.detail_wrap{
+
+}
+
+.detail_wrap .detail-top{
+	position: relative;
+	width: 750px;
+	height: 450px;
+}
+
+.detail_wrap .detail-top .cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+
+.detail_wrap .detail-top .name{
+	position: absolute;
+	top: 160px;
+	font-size: 42px;
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	text-shadow: #666 0 3px 0;
+}
+
+.detail_wrap .detail-top .price{
+	position: absolute;
+	top: 260px;
+	font-size: 60px;
+	color: #FFF;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	text-shadow: #666 0 3px 0;
+}
+
+.detail_wrap .detail-top .rest{
+	position: absolute;
+	top: 400px;
+	right: 20px;
+	font-size: 24px;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: #666 0 3px 0;
+}
+
+.detail_wrap .detail-main{
+	position: relative;
+	width: 100%;
+}
+
+.detail_wrap .detail-main .dm-line{
+	margin-left: auto;
+	margin-right: auto;
+	width: 718px;
+	line-height: 85px;
+	border-bottom: 2px solid #ebebeb;
+}
+
+.detail_wrap .detail-main .dl-title{
+	font-size: 30px;
+	color: #666;
+	width: 148px;
+	text-align: left;
+}
+
+.detail_wrap .detail-main .dm-line .js-m{
+	display: inline-block;
+	font-size: 38px;
+	color: #FFF;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: #fd446e;
+	border-radius: 50%;
+}
+
+.detail_wrap .detail-main .dm-line  .num{
+	display: inline-block;
+	width: 125px;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+}
+
+.detail_wrap .detail-main .dm-line .js-a{
+	display: inline-block;
+	font-size: 38px;
+	color: #FFF;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background: #fd446e;
+	border-radius: 50%;
+}
+
+.detail_wrap .detail-main .dm-line .dfi{
+	border:none;
+	width: 510px;
+	font-size: 30px;
+	color: #333;
+}
+
+.detail_wrap .detail-main .dm-line .dft{
+	border: none;
+	width: 510px;
+	font-size: 30px;
+	color: #333;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+.detail_wrap .detail-sum{
+	font-size: 30px;
+	color: #333;
+	height: 80px;
+	line-height: 80px;
+	padding-right: 30px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.detail_wrap .detail-sum span{
+	color: #fd446e;
+}
+
+.detail_wrap  .submit-bt{
+
+	display: block;
+	width: 700px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	background: #fd446e;
+	color: #FFF;
+	font-size: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 40px;
+}
