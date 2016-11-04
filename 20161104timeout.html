@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+		<meta http-equiv="Content-Type">
+		<meta content="text/html; charset=utf-8">
+		<meta charset="utf-8">
+		<title>会员中心</title>		
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=750px, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<script src="./js/zepto.min.js"></script>
+		<script>
+		function adaptscreen(widthnum){
+			var DEFAULT_WIDTH = widthnum, // 页面的默认宽度
+			ua = navigator.userAgent.toLowerCase(), // 根据 user agent 的信息获取浏览器信息
+			deviceWidth = window.screen.width, // 设备的宽度
+			devicePixelRatio = window.devicePixelRatio || 1, // 物理像素和设备独立像素的比例，默认为1
+			targetDensitydpi;    // Android4.0以下手机不支持viewport的width，需要设置target-densitydpi
+			if (ua.indexOf("android") !== -1 && parseFloat(ua.slice(ua.indexOf("android")+8)) < 4) {
+				targetDensitydpi = DEFAULT_WIDTH / deviceWidth * devicePixelRatio * 160;
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=' + targetDensitydpi + ', width=device-width, user-scalable=no');
+			}else{
+				$('meta[name="viewport"]').attr('content', 'target-densitydpi=device-dpi, width='+DEFAULT_WIDTH+'px, user-scalable=no');
+			}
+		}
+		adaptscreen(750);
+		</script>      
+		<link rel="stylesheet" type="text/css" href="css/reset.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css?v=0" />
+		<link rel="stylesheet" type="text/css" href="css/index20161104.css?v=0" />
+	</head>
+	<body class="timeout_bg">
+		<div class="timeout_wrap">
+			<img class="tw-main2 pt-page-bigAndSmall" src="./imgs/20161104/timeout_main2.png" alt="">
+			<img class="tw-main" src="./imgs/20161104/timeout_main.png" alt="">
+			<div class="tw-timeout" lasttime="50000">--分--秒</div>
+			<div class="tw-share">分享</div>
+		</div>
+		<script>
+		var curDate = new Date();
+		var timer={};
+		$(function(){
+			daojishi();
+		})
+
+		/*倒计时*/
+		function formatSeconds(value) {
+		    var theTime = parseInt(value);// 秒
+		    var theTime1 = 0;// 分
+		    var theTime2 = 0;// 小时
+		    if(theTime > 60) {
+		        theTime1 = parseInt(theTime/60);
+		        theTime = parseInt(theTime%60);
+		        //     if(theTime1 > 60) {
+		        //     theTime2 = parseInt(theTime1/60);
+		        //     theTime1 = parseInt(theTime1%60);
+		        // }
+		    }
+		        var result = ""+parseInt(theTime)+"秒";
+		        if(theTime1 > 0) {
+		            result = ""+parseInt(theTime1)+"分"+result;
+		        }
+		        if(theTime2 > 0 && theTime2 < 24) {
+		            result = ""+parseInt(theTime2)+"小时"+result;
+		        }else if(theTime2 > 0 && theTime2 >= 24){
+		            result = "" +parseInt(theTime2/24) + "天" + parseInt(theTime2%24) + "小时"+result;
+		        }
+		    return result;
+		}
+
+		function daojishi(){
+			timer = setInterval(function(){
+				var tmpDate = new Date();
+				$('[lasttime]').each(function(){
+					var restsecond = $(this).attr('lasttime');
+					var restNow = parseInt((restsecond * 1000  - (tmpDate - curDate))/1000);
+					//console.log(restNow);
+					if(restNow < 0){
+						restNow = 0;
+						$('.rest-time').addClass('hide');
+						$('.js-search-bottle').attr('canthrow','1');
+					}else{
+						$(this).html(formatSeconds(restNow))
+						$('.js-search-bottle').attr('canthrow','0');
+					}
+				})
+			},1000)
+		}
+		</script>
+	</body>
+</html>
